@@ -19,6 +19,8 @@ public class SimpleIK : MonoBehaviour
     {
         length0 = Vector2.Distance(joint0.position, joint1.position);
         length1 = Vector2.Distance(joint1.position, hand.position);
+        Debug.Log(length0);
+        Debug.Log(length1);
     }
 
     void Update()
@@ -33,12 +35,18 @@ public class SimpleIK : MonoBehaviour
         Vector2 diff = target.position - joint0.position;
         float atan = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
 
+        //Debug.Log("target pos: " + target.position);
+        //Debug.Log("joint0 pos: " + joint0.position);
+        //Debug.Log("diff :" + diff);
+        //Debug.Log("atan: " + atan);
+
         // Is the target reachable?
         // If not, we stretch as far as possible
         if (length0 + length1 < distance_to_target)
         {
             jointAngle0 = atan;
             jointAngle1 = 0f;
+            Debug.Log("Distance to target is more than our length!");
         }
         else
         {
@@ -51,8 +59,8 @@ public class SimpleIK : MonoBehaviour
             float angle1 = Mathf.Acos(cosAngle1) * Mathf.Rad2Deg;
 
             // So they work in Unity reference frame
-            jointAngle0 = atan - angle0;
-            jointAngle1 = 180f - angle1;
+            jointAngle0 = atan - angle0; //ANGLE A
+            jointAngle1 = 180f - angle1; //ANGLE B
         }
 
         Vector3 euler0 = joint0.transform.localEulerAngles;
