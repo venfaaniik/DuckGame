@@ -15,6 +15,8 @@ public class SimpleIK : MonoBehaviour
     private float length0;
     private float length1;
 
+    
+
     void Start()
     {
         length0 = Vector2.Distance(joint0.position, joint1.position);
@@ -33,12 +35,7 @@ public class SimpleIK : MonoBehaviour
 
         // Angle from joint0 and target
         Vector2 diff = target.position - joint0.position;
-        float atan = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-
-        //Debug.Log("target pos: " + target.position);
-        //Debug.Log("joint0 pos: " + joint0.position);
-        //Debug.Log("diff :" + diff);
-        //Debug.Log("atan: " + atan);
+        float atan = Mathf.Atan2(-diff.y, -diff.x) * Mathf.Rad2Deg;
 
         // Is the target reachable?
         // If not, we stretch as far as possible
@@ -46,7 +43,6 @@ public class SimpleIK : MonoBehaviour
         {
             jointAngle0 = atan;
             jointAngle1 = 0f;
-            Debug.Log("Distance to target is more than our length!");
         }
         else
         {
