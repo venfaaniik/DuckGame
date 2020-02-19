@@ -7,20 +7,18 @@ public class SimpleIK : MonoBehaviour
     [Header("Joints)")]
     public Transform joint0;
     public Transform joint1;
-    public Transform hand;
+    public Transform leg;
 
-    [Header("target")]
+    [Header("Target")]
     public Transform target;
 
     private float length0;
     private float length1;
 
-    
-
     void Start()
     {
         length0 = Vector2.Distance(joint0.position, joint1.position);
-        length1 = Vector2.Distance(joint1.position, hand.position);
+        length1 = Vector2.Distance(joint1.position, leg.position);
         Debug.Log(length0);
         Debug.Log(length1);
     }
