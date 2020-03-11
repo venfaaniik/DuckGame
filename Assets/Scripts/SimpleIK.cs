@@ -19,8 +19,6 @@ public class SimpleIK : MonoBehaviour
     {
         length0 = Vector2.Distance(joint0.position, joint1.position);
         length1 = Vector2.Distance(joint1.position, leg.position);
-        Debug.Log(length0);
-        Debug.Log(length1);
     }
 
     void Update()
