@@ -4,15 +4,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Vector3 mousePosition;
+    public Vector3 targetPosition;
     public float moveSpeed = 0.1f;
 
     // Use this for initialization
     void Start()
     {
-
     }
 
-    // Update is called once per frame
+   // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButton(1))
@@ -23,4 +23,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+
+
+
 

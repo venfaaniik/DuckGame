@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System;
+
 public class Pathfinding : MonoBehaviour
 { 
     PathRequestManager requestManager;
@@ -30,7 +31,6 @@ public class Pathfinding : MonoBehaviour
 
         if (targetNode.walkable) //if (startNode.walkable && targetNode.walkable)
         {
-
             Heap<KNode> openSet = new Heap<KNode>(grid.MaxSize);
             HashSet<KNode> closedSet = new HashSet<KNode>();
             openSet.Add(startNode);
@@ -70,6 +70,10 @@ public class Pathfinding : MonoBehaviour
                     }
                 }
             }
+        }
+        else
+        {
+            UnityEngine.Debug.Log("Target Not walkable");
         }
         yield return null;
         if (pathSuccess)
