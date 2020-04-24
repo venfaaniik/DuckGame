@@ -8,13 +8,10 @@ public class Unit : MonoBehaviour
     const float pathUpdateMoveThreshold = 0.5f;
 
     public Transform target;
-    public float speed = 10;
+    public float speed = 10f;
     public float turnDst = 5f;
     public float turnSpeed = 3f;
-    public float stoppingDst = 10;
-
-    //Vector3[] path;
-    //int targetIndex;
+    public float stoppingDst = 10f;
 
     Path path;
 
@@ -28,13 +25,8 @@ public class Unit : MonoBehaviour
         if (pathSuccessful)
         {
             path = new Path(waypoints, transform.position, turnDst, stoppingDst);
-            //path = newPath;
             StopCoroutine("FollowPath");
             StartCoroutine("FollowPath");
-        }
-        else
-        {
-            Debug.Log("COUDLN'T FIND PATH");
         }
     }
 
@@ -44,7 +36,7 @@ public class Unit : MonoBehaviour
         {
             yield return new WaitForSeconds(.3f);
         }
-        PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+        PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
 
         float sqrMoveThreshold = pathUpdateMoveThreshold * pathUpdateMoveThreshold;
         Vector3 targetPosOld = target.position;
@@ -54,7 +46,7 @@ public class Unit : MonoBehaviour
             yield return new WaitForSeconds(minPathUpdateTime);
             if ((target.position - targetPosOld).sqrMagnitude > sqrMoveThreshold)
             {
-                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
                 targetPosOld = target.position;
             }
         }
@@ -62,18 +54,16 @@ public class Unit : MonoBehaviour
 
     IEnumerator FollowPath()
     {
-        /*targetIndex = 0;*/ //added as a "fix" for idk what
         bool followingPath = true;
         int pathIndex = 0;
-        //transform.LookAt(path.lookPoints[0]);
 
-        Vector3 currentWaypoint = path.lookPoints[0]; //DEBUGGGG
+        Vector3 currentWaypoint = path.lookPoints[0]; //DEBUGGGG NO MORE, IT OFFICIAL NOW
 
         float speedPercent = 1;
 
         while (followingPath)
         {
-            Vector2 pos2D = new Vector2(transform.position.x, transform.position.z); //THIS HERE !!!
+            Vector2 pos2D = new Vector2(transform.position.x, transform.position.z);
             while (path.turnBoundaries[pathIndex].HasCrossedLine (pos2D))
             {
                 if (pathIndex == path.finishLineIndex)
@@ -108,7 +98,9 @@ public class Unit : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-
+        if (path != null)
+        {
+            path.DrawWithGizmos();
+        }
     }
-
 }

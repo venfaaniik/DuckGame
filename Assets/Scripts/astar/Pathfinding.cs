@@ -6,28 +6,20 @@ using System;
 
 public class Pathfinding : MonoBehaviour
 { 
-    PathRequestManager requestManager;
     KGrid grid;
 
     void Awake()
     {
-        requestManager = GetComponent<PathRequestManager>();
         grid = GetComponent<KGrid>();
     }
 
-
-    public void StartFindPath(Vector3 startPos, Vector3 targetPos)
-    {
-        StartCoroutine(FindPath(startPos, targetPos));
-    }
-
-    IEnumerator FindPath(Vector3 startPos, Vector3 targetPos)
+    public void FindPath(PathRequest request, Action<PathResult> callback)
     {
         Vector3[] waypoints = new Vector3[0];
         bool pathSuccess = false;
 
-        KNode startNode = grid.NodeFromWorldPoint(startPos);
-        KNode targetNode = grid.NodeFromWorldPoint(targetPos);
+        KNode startNode = grid.NodeFromWorldPoint(request.pathStart);
+        KNode targetNode = grid.NodeFromWorldPoint(request.pathEnd);
 
         if (targetNode.walkable) //if (startNode.walkable && targetNode.walkable)
         {
@@ -43,7 +35,6 @@ public class Pathfinding : MonoBehaviour
                 if (currentNode == targetNode)
                 {
                     pathSuccess = true;
-
                     break;
                 }
 
@@ -71,16 +62,14 @@ public class Pathfinding : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            UnityEngine.Debug.Log("Target Not walkable");
-        }
-        yield return null;
+
         if (pathSuccess)
         {
             waypoints = RetracePath(startNode, targetNode);
+            pathSuccess = waypoints.Length > 0;
         }
-        requestManager.FinishedProcessingPath(waypoints, pathSuccess);
+
+        callback(new PathResult(waypoints, pathSuccess, request.callback));
     }
 
     Vector3[] RetracePath(KNode startNode, KNode endNode)
@@ -118,7 +107,6 @@ public class Pathfinding : MonoBehaviour
         return waypoints.ToArray();
     }
 
-
     int GetDistance(KNode nodeA, KNode nodeB)
     {
         int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX);
@@ -128,6 +116,4 @@ public class Pathfinding : MonoBehaviour
             return 14 * dstY + 10 * (dstX - dstY);
         return 14 * dstX + 10 * (dstY - dstX);
     }
-
-
 }
