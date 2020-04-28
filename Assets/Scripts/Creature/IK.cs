@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.XR;
@@ -25,18 +26,18 @@ public class IK : MonoBehaviour
 	[Header("Joints")]
 	public Transform[] joints;
 
-	[Header("Legs")]
-	public Transform[] legs;
-	public Transform tip;
 
 	[Header("Target")]
+	public Transform tip;
 	public Transform target;
 
 	List<IKjoint> jointsList = new List<IKjoint>();
 	List<float> boneLengths = new List<float>();
+	//List<float> dst_to_nxt = new List<float>();
 	float totalLength;
 
 	private void Awake() {
+		//init list
 		for (int i = 0; i < joints.Length; i++) {
 			IKjoint IK = new IKjoint(Vector3.zero, 0, 0, joints[i]);
 			jointsList.Add(IK);
@@ -60,10 +61,12 @@ public class IK : MonoBehaviour
 
 		//dst from start to end
 		float dst_to_target = Vector2.Distance(jointsList[0].joint.position, target.position);
+		float tip_to_target = Vector2.Distance(tip.position, target.position);
+
 
 		//angle from j0 and target
 		Vector2 diff = target.position - joints[0].position;
-		float atan = Mathf.Atan2(-diff.y, -diff.x) * Mathf.Rad2Deg;
+		float atan = Mathf.Atan2(diff.x, -diff.y) * Mathf.Rad2Deg;
 
 		//is the target reachable?
 		//if not, stretch as far as possible
@@ -77,7 +80,7 @@ public class IK : MonoBehaviour
 			//miks vitus tää ei voi toimia
 			//jointsList[0].jointAngle = atan;
 
-			for (int i = 0; i < joints.Length; i++) {
+			for (int i = 1; i < joints.Length; i++) {
 				paska = jointsList[i];
 				paska.jointAngle = 0f;
 				jointsList[i] = paska;
@@ -85,45 +88,70 @@ public class IK : MonoBehaviour
 		}
 		else {
 			float cosAngle;
+			float angle;
 
 			//BE MY ANGLE PLEASE
 			for (int i = 0; i < joints.Length; i++) {
 				var paska = jointsList[i];
 
-				if (i % 2 == 0) {
-					cosAngle = ((dst_to_target * dst_to_target) + (boneLengths[i] * boneLengths[i]) - (boneLengths[i + 1] * boneLengths[i + 1])) / (2 * dst_to_target * boneLengths[i]);
-					paska.angle = Mathf.Acos(cosAngle) * Mathf.Rad2Deg;
-					//jointsList[i] = paska;
+				Debug.Log("joints pituus: " + joints.Length);
+				//Debug.Log("bones pituus: " + boneLengths.Count); //te molemmat paskapäät ootte atm 4 miks itkette
+				//se olin minä joka lopussa itki.
+				
+
+				// A = (b² + c² - a²) / 2bc
+				//bonelengths[i] = c
+				//bonelengths[i+1] = a
+
+				if ((i % 2 == 0) && (i < boneLengths.Count - 1)) {
+					cosAngle = ((dst_to_nxt(i) * dst_to_nxt(i)) + (boneLengths[i] * boneLengths[i]) - (boneLengths[i + 1] * boneLengths[i + 1])) / (2 * dst_to_nxt(i) * boneLengths[i]);
 				}
+				// B = (a² + c² - b²) / 2ac
+				else if (i < boneLengths.Count - 1) {
+					cosAngle = ((boneLengths[i + 1] * boneLengths[i + 1]) + (boneLengths[i] * boneLengths[i]) - (dst_to_nxt(i) * dst_to_nxt(i))) / (2 * boneLengths[i + 1] * boneLengths[i]);
+				}
+				//kun ollaan raajan päässä
 				else {
-					cosAngle = ((boneLengths[i + 1] * boneLengths[i + 1]) + (boneLengths[i] * boneLengths[i]) - (dst_to_target * dst_to_target)) / (2 * boneLengths[i + 1] * boneLengths[i]);
-					paska.angle = Mathf.Acos(cosAngle) * Mathf.Rad2Deg;
-					//jointsList[i] = paska;
+					cosAngle = ((dst_to_nxt(i) * dst_to_nxt(i)) + (boneLengths[i] * boneLengths[i]) - (dst_to_nxt(i) * dst_to_nxt(i))) / (2 * dst_to_nxt(i) * boneLengths[i]);
+					//cosAngle = ((tip_to_target * tip_to_target) + (boneLengths[i] * boneLengths[i]) - (dst_to_target * dst_to_target)) / (2 * tip_to_target * boneLengths[i]);
+					//cosAngle = ((dst_to_target * dst_to_target) + (boneLengths[i] * boneLengths[i]) - (boneLengths[i + 1] * boneLengths[i + 1])) / (2 * dst_to_target * boneLengths[i]);
+				}
+
+				angle = Mathf.Acos(cosAngle) * Mathf.Rad2Deg;
+				if (float.IsNaN(angle)) {
+					Debug.Log("angle is: " + angle);
 				}
 
 				//so they work in unity
 				if (i % 2 == 0) {
-					paska.jointAngle = 180f - paska.angle;
+					paska.jointAngle = atan - angle;
 					jointsList[i] = paska;
 				}
 				else { 
-					paska.jointAngle = atan - paska.angle;
+					paska.jointAngle = 180f - angle;
 					jointsList[i] = paska;
 				}
 			}
-
 		}
 
 		for (int i = 0; i < boneLengths.Count; i++) {
 			var paska = jointsList[i];
+			Vector3 euler = new Vector3();
 
-			paska.euler = jointsList[i].joint.transform.localEulerAngles;
-			float shit = paska.euler.z;
-			shit = paska.jointAngle;
-			jointsList[i].joint.transform.localEulerAngles = paska.euler;
+			euler = jointsList[i].joint.transform.localEulerAngles;
+			euler.z = paska.jointAngle;
+			jointsList[i].joint.transform.localEulerAngles = euler;
+
+			paska.euler = euler;
 			jointsList[i] = paska;
-
-			Debug.Log("jointpaskaa euler = " + jointsList[i].euler);
 		}
+	}
+
+	float dst_to_nxt(int i) {
+		if (joints.Length > i + 2) {
+			return Vector2.Distance(joints[i].position, joints[i + 2].position);
+		}
+		Debug.Log("joint tääl on: " + i);
+		return Vector2.Distance(joints[i].position, tip.position);
 	}
 }
