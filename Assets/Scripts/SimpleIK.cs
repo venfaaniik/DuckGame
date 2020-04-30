@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleIK : MonoBehaviour
 {
-    [Header("Joints)")]
+    [Header("Joints")]
     public Transform joint0;
     public Transform joint1;
     public Transform leg;
