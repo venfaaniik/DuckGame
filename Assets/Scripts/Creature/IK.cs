@@ -1,27 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
-using UnityEngine.XR;
 
-public struct IKjoint
-{
+public struct IKjoint {
 	public Vector3 euler;
 	public float jointAngle;
 	public Transform joint;
 
 	//not needed really
-	public IKjoint(Vector3 euler, float jointAngle, Transform joint)
-	{
+	public IKjoint(Vector3 euler, float jointAngle, Transform joint) {
 		this.euler = euler;
 		this.jointAngle = jointAngle;
 		this.joint = joint;
 	}
 }
 
-public class IK : MonoBehaviour
-{
+public class IK : MonoBehaviour {
 	[Header("Joints")]
 	public Transform[] joints;
 
@@ -49,14 +42,12 @@ public class IK : MonoBehaviour
 			float temp;
 			if (i < (joints.Length - 1))
 				temp = Vector2.Distance(joints[i].position, joints[i + 1].position);
-			else 
+			else
 				temp = Vector2.Distance(joints[i].position, tip.position);
 
-			Debug.Log("length: " + temp);
 			totalLength += temp;
 			boneLengths.Add(temp);
 		}
-		Debug.Log("Total length: " + totalLength);
 	}
 
 	// AND THIS IS WHERE THE SHIT BEGINS
@@ -96,37 +87,39 @@ public class IK : MonoBehaviour
 			for (int i = 0; i < joints.Length; i++) {
 				var paska = jointsList[i];
 
-				Debug.Log("joints pituus: " + joints.Length);
-				Debug.Log("bones pituus: " + boneLengths.Count); //te molemmat paskapäät ootte atm 4 miks itkette
+				//Debug.Log("joints pituus: " + joints.Length);
+				//Debug.Log("bones pituus: " + boneLengths.Count); //te molemmat paskapäät ootte atm 4 miks itkette
 				//se olin minä joka lopussa itki.
 
+				//// 1() ((distance_to_target * distance_to_target) + (length0 * length0) - (length1 * length1)) / (2 * distance_to_target * length0);
+				//// 2() ((length1 * length1) + (length0 * length0) - (distance_to_target * distance_to_target)) / (2 * length1 * length0);
 
-				// A = (b² + c² - a²) / 2bc
-				//bonelengths[i] = c
-				//bonelengths[i+1] = a
-				if ((i % 2 == 0) && (i < boneLengths.Count - 1)) {
-					cosAngle = ((dst_to_nxt(i) * dst_to_nxt(i)) + (boneLengths[i] * boneLengths[i]) - (boneLengths[i + 1] * boneLengths[i + 1])) / (2 * dst_to_nxt(i) * boneLengths[i]);
-				}
-				// B = (a² + c² - b²) / 2ac
-				else if (i < boneLengths.Count - 1) {
+				//if ((i == 0) && (i < boneLengths.Count - 1)) {
+				//	cosAngle = ((dst_to_nxt(i) * dst_to_nxt(i)) + (boneLengths[i] * boneLengths[i]) - (boneLengths[i + 1] * boneLengths[i + 1])) / (2 * dst_to_nxt(i) * boneLengths[i]);
+				//}
+
+				if (i < boneLengths.Count - 1) {
 					cosAngle = ((boneLengths[i + 1] * boneLengths[i + 1]) + (boneLengths[i] * boneLengths[i]) - (dst_to_nxt(i) * dst_to_nxt(i))) / (2 * boneLengths[i + 1] * boneLengths[i]);
 				}
+
 				else {
-					cosAngle = ((dst_to_nxt(i) * dst_to_nxt(i)) + (boneLengths[i] * boneLengths[i]) - (dst_to_target * dst_to_target)) / (2 * dst_to_nxt(i) * boneLengths[i]);
+					//distance =>> väli J3 ja targetin välillä
+					//dst_to_nxt => Vector2.Distance(joints[i].position, tip.position);
+					//cosAngle = ((dst_to_nxt(i) * dst_to_nxt(i)) + (boneLengths[i] * boneLengths[i]) - (distance(i) * distance(i))) / (2 * dst_to_nxt(i) * boneLengths[i]);
+					cosAngle = ((distance(i) * distance(i)) + (boneLengths[i] * boneLengths[i]) - (dst_to_nxt(i) * dst_to_nxt(i))) / (2 * dst_to_nxt(i) * boneLengths[i]);
 				}
 
 				angle = Mathf.Acos(cosAngle) * Mathf.Rad2Deg;
-
 				if (float.IsNaN(angle)) {
 					Debug.Log("angle is: " + angle);
 				}
 
 				//so they work in unity
-				if (i % 2 == 0) {
+				if (i == 0) {
 					paska.jointAngle = atan - angle;
 					jointsList[i] = paska;
 				}
-				else { 
+				else {
 					paska.jointAngle = 180f - angle;
 					jointsList[i] = paska;
 				}
@@ -151,4 +144,63 @@ public class IK : MonoBehaviour
 		}
 		return Vector2.Distance(joints[i].position, tip.position);
 	}
+
+	//distance to target
+	float distance(int i) {
+		return Vector2.Distance(joints[i].position, target.position);
+	}
+
+
+	void backwards() {
+		int last = joints.Length;
+		joints[last - 1] = target;
+
+		for (int i = 0; i < joints.Length; i++) {
+
+		}
+	}
 }
+
+
+
+/*
+
+Y function chain:backward()
+-- backward reaching; set end effector as target
+
+self.joints[self.n] = self.target;
+v for i = self.n - 1, 1, -1 do
+local r = (self.joints[i+1] - self.joints[i]);
+local 1 = self.lengths[i] / r.magnitude;
+
+-- find new joint position
+local pos = (1 - 1) * self.joints[i+1] + 1 * self.joints[i];
+self.joints[i] = pos;
+end;
+end;
+
+Y function chain: forward ()
+-- forward reaching; set root at initial position
+
+jself.joints[1] = self.origin.p;
+local coneVec = (self.joints[2] - self.joints[1i]).unit;
+“ for i= 1, self.n - 1 do
+local r = (self.joints[i+1] - self.joints[i]);
+
+local 1 = self.lengths[i] / r.magnitude;
+-- setup matrix
+
+local cf_.= CFrame.new(self.joints[i], self.joints[i] + coneVec);
+
+-- find hew joint position
+local pos = (1 - 1) * self.joints[i] + 1 * self.joints[i+1];
+
+local t = self:constrain(pos - self.joints[i], coneVec, cf);
+
+self.joints[i+1] = self.constrained and self.joints[i] + t or pos;
+
+coneVec = self.joints[i+1] - self.joints[i];
+end;
+end;
+
+ */
