@@ -131,9 +131,9 @@ GameObject:
   m_Component:
   - component: {fileID: 85186503}
   - component: {fileID: 85186504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,9 +320,9 @@ GameObject:
   m_Component:
   - component: {fileID: 97966611}
   - component: {fileID: 97966612}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -511,9 +511,9 @@ GameObject:
   m_Component:
   - component: {fileID: 139729739}
   - component: {fileID: 139729740}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -700,9 +700,9 @@ GameObject:
   m_Component:
   - component: {fileID: 180324692}
   - component: {fileID: 180324693}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,9 +781,9 @@ GameObject:
   m_Component:
   - component: {fileID: 194026507}
   - component: {fileID: 194026508}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 221720474}
   - component: {fileID: 221720475}
   - component: {fileID: 221720476}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,9 +1050,9 @@ GameObject:
   m_Component:
   - component: {fileID: 234186274}
   - component: {fileID: 234186275}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1349,9 +1349,9 @@ GameObject:
   m_Component:
   - component: {fileID: 254905981}
   - component: {fileID: 254905982}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1754,9 +1754,9 @@ GameObject:
   m_Component:
   - component: {fileID: 281791530}
   - component: {fileID: 281791531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2151,9 +2151,9 @@ GameObject:
   m_Component:
   - component: {fileID: 303936308}
   - component: {fileID: 303936309}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2448,9 +2448,9 @@ GameObject:
   m_Component:
   - component: {fileID: 327180005}
   - component: {fileID: 327180006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3645,9 +3645,9 @@ GameObject:
   m_Component:
   - component: {fileID: 421145222}
   - component: {fileID: 421145223}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3729,7 +3729,7 @@ GameObject:
   - component: {fileID: 434919527}
   - component: {fileID: 434919528}
   - component: {fileID: 434919529}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4678,9 +4678,9 @@ GameObject:
   - component: {fileID: 549834997}
   - component: {fileID: 549834999}
   - component: {fileID: 549834998}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4776,9 +4776,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 556086167}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tentacle 3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4809,9 +4809,9 @@ GameObject:
   - component: {fileID: 556675664}
   - component: {fileID: 556675666}
   - component: {fileID: 556675665}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4908,9 +4908,9 @@ GameObject:
   m_Component:
   - component: {fileID: 558517160}
   - component: {fileID: 558517161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4991,9 +4991,9 @@ GameObject:
   m_Component:
   - component: {fileID: 558685387}
   - component: {fileID: 558685388}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5072,9 +5072,9 @@ GameObject:
   m_Component:
   - component: {fileID: 563384925}
   - component: {fileID: 563384926}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5371,9 +5371,9 @@ GameObject:
   m_Component:
   - component: {fileID: 581516774}
   - component: {fileID: 581516775}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5668,9 +5668,9 @@ GameObject:
   m_Component:
   - component: {fileID: 619267748}
   - component: {fileID: 619267749}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5751,9 +5751,9 @@ GameObject:
   m_Component:
   - component: {fileID: 643950674}
   - component: {fileID: 643950675}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6072,9 +6072,9 @@ GameObject:
   m_Component:
   - component: {fileID: 665976493}
   - component: {fileID: 665976494}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6377,8 +6377,9 @@ GameObject:
   - component: {fileID: 710007518}
   - component: {fileID: 710007517}
   - component: {fileID: 710007514}
+  - component: {fileID: 710007522}
   - component: {fileID: 710007515}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6393,7 +6394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710007512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1380211835}
@@ -6419,6 +6420,10 @@ MonoBehaviour:
   jumpSpeed: 40
   groundCheck: 0
   isSwinging: 0
+  ropeHook: {x: 0, y: 0}
+  swingForce: 30
+  spriteWalking: {fileID: 21300000, guid: 434b6c5a70b9cb94b97e601f498085e8, type: 3}
+  spriteJumping: {fileID: 21300000, guid: b1f3b1853a61996419b2cf384278abea, type: 3}
 --- !u!114 &710007515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6663,6 +6668,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &710007522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710007512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0789d8defac38408716772c09e8e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  curHealth: 100
+  decHealth: 50
+  regHealth: 1
 --- !u!1 &718657885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,9 +6693,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718657886}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tentacles
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6918,9 +6939,9 @@ GameObject:
   m_Component:
   - component: {fileID: 767176422}
   - component: {fileID: 767176423}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seekers
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7335,7 +7356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827569983}
   - component: {fileID: 827569984}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7416,9 +7437,9 @@ GameObject:
   m_Component:
   - component: {fileID: 828439736}
   - component: {fileID: 828439737}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7497,9 +7518,9 @@ GameObject:
   m_Component:
   - component: {fileID: 843787213}
   - component: {fileID: 843787214}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7578,9 +7599,9 @@ GameObject:
   m_Component:
   - component: {fileID: 845932552}
   - component: {fileID: 845932553}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7897,9 +7918,9 @@ GameObject:
   m_Component:
   - component: {fileID: 856159286}
   - component: {fileID: 856159287}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7981,7 +8002,7 @@ GameObject:
   - component: {fileID: 861775694}
   - component: {fileID: 861775696}
   - component: {fileID: 861775695}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8415,9 +8436,9 @@ GameObject:
   m_Component:
   - component: {fileID: 890571902}
   - component: {fileID: 890571903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8496,9 +8517,9 @@ GameObject:
   m_Component:
   - component: {fileID: 894306314}
   - component: {fileID: 894306315}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8687,9 +8708,9 @@ GameObject:
   m_Component:
   - component: {fileID: 926438406}
   - component: {fileID: 926438407}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8768,9 +8789,9 @@ GameObject:
   m_Component:
   - component: {fileID: 941391641}
   - component: {fileID: 941391642}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8850,7 +8871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 942263372}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: groundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8882,7 +8903,7 @@ GameObject:
   - component: {fileID: 957534529}
   - component: {fileID: 957534531}
   - component: {fileID: 957534530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8959,9 +8980,9 @@ GameObject:
   m_Component:
   - component: {fileID: 979670883}
   - component: {fileID: 979670884}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9278,9 +9299,9 @@ GameObject:
   m_Component:
   - component: {fileID: 990963897}
   - component: {fileID: 990963898}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9359,9 +9380,9 @@ GameObject:
   m_Component:
   - component: {fileID: 997149186}
   - component: {fileID: 997149187}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9442,9 +9463,9 @@ GameObject:
   m_Component:
   - component: {fileID: 999381270}
   - component: {fileID: 999381271}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9525,9 +9546,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1002366993}
   - component: {fileID: 1002366994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9608,9 +9629,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1003620940}
   - component: {fileID: 1003620941}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9689,9 +9710,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1004146282}
   - component: {fileID: 1004146283}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10192,9 +10213,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1030691291}
   - component: {fileID: 1030691292}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10274,7 +10295,7 @@ GameObject:
   - component: {fileID: 1036097624}
   - component: {fileID: 1036097626}
   - component: {fileID: 1036097625}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10351,9 +10372,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1044261546}
   - component: {fileID: 1044261547}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10672,9 +10693,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1059858576}
   - component: {fileID: 1059858577}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10753,9 +10774,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1062705106}
   - component: {fileID: 1062705107}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10834,9 +10855,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1087728056}
   - component: {fileID: 1087728057}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11369,9 +11390,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1126736704}
   - component: {fileID: 1126736705}
-  m_Layer: 0
+  - component: {fileID: 1126736706}
+  m_Layer: 11
   m_Name: Seekers (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11408,6 +11430,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 200
+--- !u!61 &1126736706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126736703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1129301897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11634,9 +11682,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1171918717}
   - component: {fileID: 1171918718}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11823,9 +11871,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1194784448}
   - component: {fileID: 1194784449}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11906,9 +11954,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1210803131}
   - component: {fileID: 1210803132}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12313,9 +12361,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1257177138}
   - component: {fileID: 1257177139}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12395,7 +12443,7 @@ GameObject:
   - component: {fileID: 1259392842}
   - component: {fileID: 1259392844}
   - component: {fileID: 1259392843}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RopeHingeAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12605,9 +12653,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1272828406}
   - component: {fileID: 1272828407}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13033,7 +13081,7 @@ GameObject:
   - component: {fileID: 1294296785}
   - component: {fileID: 1294296786}
   - component: {fileID: 1294296787}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13110,9 +13158,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1299429945}
   - component: {fileID: 1299429946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13299,9 +13347,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1318616229}
   - component: {fileID: 1318616230}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13750,9 +13798,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1341866168}
   - component: {fileID: 1341866169}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14093,9 +14141,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1353679281}
   - component: {fileID: 1353679282}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14176,9 +14224,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1361457796}
   - component: {fileID: 1361457797}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14259,9 +14307,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1363409155}
   - component: {fileID: 1363409156}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14339,7 +14387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1380211835}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: headcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14598,136 +14646,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1390770357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1390770360}
-  - component: {fileID: 1390770359}
-  - component: {fileID: 1390770358}
-  - component: {fileID: 1390770361}
-  m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!50 &1390770358
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390770357}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!212 &1390770359
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390770357}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 597a01b75578cad42bf2e47210347253, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1390770360
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390770357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4712286, y: 22.30996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1390770361
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390770357}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1407454209
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,9 +14794,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1420038850}
   - component: {fileID: 1420038851}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14957,9 +14875,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1424418209}
   - component: {fileID: 1424418210}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15500,9 +15418,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1469907982}
   - component: {fileID: 1469907983}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15638,9 +15556,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1492952141}
   - component: {fileID: 1492952142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15958,9 +15876,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1546351627}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tentacle 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15991,9 +15909,9 @@ GameObject:
   - component: {fileID: 1547401477}
   - component: {fileID: 1547401479}
   - component: {fileID: 1547401478}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16090,9 +16008,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1547717770}
   - component: {fileID: 1547717771}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16255,9 +16173,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1553604777}
   - component: {fileID: 1553604778}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16474,9 +16392,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1612991327}
   - component: {fileID: 1612991328}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16795,9 +16713,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1627350698}
   - component: {fileID: 1627350699}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16876,9 +16794,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1640963691}
   - component: {fileID: 1640963692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17087,9 +17005,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1666603063}
   - component: {fileID: 1666603064}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17171,9 +17089,10 @@ GameObject:
   - component: {fileID: 1681404972}
   - component: {fileID: 1681404973}
   - component: {fileID: 1681404974}
-  m_Layer: 0
+  - component: {fileID: 1681404975}
+  m_Layer: 11
   m_Name: ENEMY
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17263,6 +17182,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1681404975
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681404971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1703398065
 GameObject:
   m_ObjectHideFlags: 0
@@ -17273,9 +17218,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1703398066}
   - component: {fileID: 1703398067}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17356,9 +17301,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1732118296}
   - component: {fileID: 1732118297}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17548,7 +17493,7 @@ GameObject:
   - component: {fileID: 1768393984}
   - component: {fileID: 1768393986}
   - component: {fileID: 1768393985}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17950,7 +17895,7 @@ GameObject:
   - component: {fileID: 1785623112}
   - component: {fileID: 1785623113}
   - component: {fileID: 1785623114}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Seeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18351,9 +18296,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1864017262}
   - component: {fileID: 1864017263}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18540,9 +18485,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1867780743}
   - component: {fileID: 1867780744}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18622,9 +18567,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870561922}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tentacle 4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18654,9 +18599,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1871458973}
   - component: {fileID: 1871458974}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18867,9 +18812,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1885604455}
   - component: {fileID: 1885604456}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19194,9 +19139,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1898434978}
   - component: {fileID: 1898434979}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19275,9 +19220,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1907704412}
   - component: {fileID: 1907704413}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19466,9 +19411,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1941727466}
   - component: {fileID: 1941727467}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19981,9 +19926,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1998489288}
   - component: {fileID: 1998489289}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20063,13 +20008,14 @@ GameObject:
   - component: {fileID: 2024281852}
   - component: {fileID: 2024281851}
   - component: {fileID: 2024281853}
-  m_Layer: 0
+  - component: {fileID: 2024281854}
+  m_Layer: 11
   m_Name: ENEMY
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: Enemy
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2024281851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20095,7 +20041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024281850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -11, z: 0}
+  m_LocalPosition: {x: -2, y: -11, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1681404972}
@@ -20119,6 +20065,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 30
+--- !u!114 &2024281854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024281850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e0a8e582d5a0c4ca2c1d6a725ea172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  playerScript: {fileID: 710007522}
 --- !u!1 &2033163311
 GameObject:
   m_ObjectHideFlags: 0
@@ -20454,9 +20414,9 @@ GameObject:
   - component: {fileID: 2058641847}
   - component: {fileID: 2058641848}
   - component: {fileID: 2058641849}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20661,9 +20621,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2084027031}
   - component: {fileID: 2084027032}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20959,9 +20919,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2094412967}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tentacle 2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20991,9 +20951,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2099425061}
   - component: {fileID: 2099425062}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21202,9 +21162,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2112593785}
   - component: {fileID: 2112593786}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Joint (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

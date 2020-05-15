@@ -64,7 +64,7 @@ public class Caster : MonoBehaviour {
                 moveToPosition(temp, targetter);
             }
         }
-        Debug.Log(raycasts.Count);
+        //Debug.Log(raycasts.Count);
     }
 
     public Vector2 GetDirectionVector2D(float angle) {

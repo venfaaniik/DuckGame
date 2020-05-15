@@ -44,8 +44,11 @@ public class RopeSystem : MonoBehaviour {
 
         if (!ropeAttached) {
             SetCrosshairPosition(aimAngle);
+            playerMovement.isSwinging = false;
         }
         else {
+            playerMovement.isSwinging = true;
+            playerMovement.ropeHook = ropePositions.Last();
             crosshairSprite.enabled = false;
             // 1
             if (ropePositions.Count > 0) {

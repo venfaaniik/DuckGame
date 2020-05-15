@@ -111,7 +111,7 @@ public class IK : MonoBehaviour {
 
 				angle = Mathf.Acos(cosAngle) * Mathf.Rad2Deg;
 				if (float.IsNaN(angle)) {
-					Debug.Log("angle is: " + angle);
+					//Debug.Log("angle is: " + angle);
 				}
 
 				//so they work in unity
